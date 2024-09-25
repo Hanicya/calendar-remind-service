@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "fb8e8b3d-50db-42c3-9d2a-50ee8db0b185",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38293061"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/reminders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJpS3VuIiwiZXhwIjoxNzI3MjYxNTU2MjI1LCJpc3MiOiIzIiwic3ViIjoiSmlOaVRhaU1laSJ9.UH7Cjeiu338oUBPv0Y-ydPqP5CPvx3GdgkemgWUmOQc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Content\": \"前往广州塔\",\r\n    \"ReminderAt\": \"2024-09-26T02:47:00+08:00\",\r\n    \"SendType\": 2,\r\n    \"ContactInfo\": \"837425169@qq.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/reminders",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reminders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reminders/2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJpS3VuIiwiZXhwIjoxNzI3MjYxNTU2MjI1LCJpc3MiOiIyIiwic3ViIjoiSmlOaVRhaU1laSJ9.UuDsb8MoYz7gp8jPlaepPAhg3tRGqSNzb6ctzyIHb84",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Content\": \"树枝666\",\r\n    \"ReminderAt\": \"2021-04-01T12:00:00Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/reminders/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reminders",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reminders",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJpS3VuIiwiZXhwIjoxNzI3MjYxNTU2MjI1LCJpc3MiOiIyIiwic3ViIjoiSmlOaVRhaU1laSJ9.UuDsb8MoYz7gp8jPlaepPAhg3tRGqSNzb6ctzyIHb84",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/reminders",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reminders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/reminders/2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJpS3VuIiwiZXhwIjoxNzI3MjYxNTU2MjI1LCJpc3MiOiIyIiwic3ViIjoiSmlOaVRhaU1laSJ9.UuDsb8MoYz7gp8jPlaepPAhg3tRGqSNzb6ctzyIHb84",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Content\": \"前往大学城南\",\r\n    \"ReminderAt\": \"2024-09-25T08:24:00Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/reminders/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reminders",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/task",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJpS3VuIiwiZXhwIjoxNzI3MjYxNTU2MjI1LCJpc3MiOiIyIiwic3ViIjoiSmlOaVRhaU1laSJ9.UuDsb8MoYz7gp8jPlaepPAhg3tRGqSNzb6ctzyIHb84",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/task",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"task"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
